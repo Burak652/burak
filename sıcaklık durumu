@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int sicaklik;
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Hava Sıcaklığını giriniz : ");
+        sicaklik = inp.nextInt();
+
+        if (sicaklik< 5) {
+            System.out.print("Kayak yapabilirsiniz");
+
+        }else if ((sicaklik >= 5) && (15 >= sicaklik)) {
+            System.out.print("Sinemaya gidebilirsiniz");
+
+        }else if ((sicaklik >= 15) && (25 >= sicaklik)) {
+            System.out.print("Pikniğe gidebilirsiniz");
+
+        } else if (sicaklik > 25) {
+            System.out.print("Yüzmeye gidebilirsiniz");
+        }
+    }
+}
